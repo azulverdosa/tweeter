@@ -29,4 +29,12 @@ body {
 
 nav {
   font-family: 'Bungee', cursive;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+header {
+  margin-top: 120px;
 }
