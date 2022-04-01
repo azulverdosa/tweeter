@@ -1,15 +1,15 @@
 nav {
-  display: flex;
   align-items: flex-end;
-  justify-content: space-between;
   background-color: rgb(12, 61, 89);
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
+  flex-grow: 1;
   font-family: 'Bungee', cursive;
   padding: 1.5em 1.5em;
-  flex-grow: 1;
 }
 
 .new-tweet {
@@ -25,6 +25,6 @@ nav div {
 
 .fa-angles-down {
   align-self: center;
-  padding: 0em 0em 0.5em;
   color: #44857d;
+  padding: 0em 0em 0.5em;
 }
