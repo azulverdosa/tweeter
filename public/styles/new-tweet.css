@@ -1,0 +1,36 @@
+main section h2 {
+  padding-bottom: 10px;
+  margin: 3px;
+}
+
+main textarea {
+  border-style: hidden;
+  background-color: rgb(244, 241, 236);
+  overflow: hidden;
+  width: 80vw;
+  height: 40px;
+  resize: none;
+  border-bottom: solid;
+  border-bottom-color: #545149;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+main section div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+main section button {
+  font-family: 'Bungee', cursive;
+  color: white;
+  background-color: rgb(12, 61, 89);
+  border: none;
+  border-radius: 3px;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+}
