@@ -34,3 +34,7 @@ main section button {
 .counter {
   font-family: 'Bungee', cursive;
 }
+
+.negative-counter {
+  color: red;
+}
