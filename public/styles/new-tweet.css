@@ -24,11 +24,12 @@ main section div {
 }
 
 main section button {
-  font-family: 'Bungee', cursive;
-  color: white;
   background-color: #44857d;
   border: none;
   border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Bungee', cursive;
 }
 
 main section.new-tweet {
@@ -43,4 +44,12 @@ main section.new-tweet {
 
 .negative-counter {
   color: red;
+}
+
+.fa-solid {
+  padding-right: 10px;
+}
+
+main section i.name {
+  padding-right: 625px;
 }
