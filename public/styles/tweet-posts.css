@@ -24,6 +24,16 @@
   margin-right: 10px
 }
 
+.tweet-container header figure {
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+
+.tweet-container header figcaption {
+  margin-left: 10px;
+}
+
 .tweet-container footer {
   display: flex;
   justify-content: space-between;
@@ -40,6 +50,7 @@
   padding-left: 20px;
   padding-bottom: 15px;
   margin-bottom: 10px;
+  word-break: break-word;
 }
 
 .tweet-container span {
