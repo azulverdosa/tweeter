@@ -38,6 +38,29 @@ main section.new-tweet {
   padding-right: 15px
 }
 
+main section .error-window {
+  border: solid;
+  border-color: #b14a4a;
+  border-radius: 10px;
+  display: flex;
+  padding: 1em 1em;
+  margin-bottom: 20px;
+}
+
+main section article .fa-triangle-exclamation {
+  color: #b14a4a;
+  align-self: center;
+}
+
+main section article .error-message {
+  color: #b14a4a; 
+}
+
+.error-message {
+  flex-direction: column;
+  padding-left: 20px;
+}
+
 .counter {
   font-family: 'Bungee', cursive;
 }
