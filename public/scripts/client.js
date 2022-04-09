@@ -69,23 +69,32 @@ $(document).ready(() => {
 
   const $form = $('.new-tweet form');
   const $tweetText = $('#tweet-text');
+  const $errorWindow = $('.new-tweet .error-window');
+  const $errorMessage = $('.error-window .error-message');
+
+  $errorWindow.hide();
 
   $form.on('submit', function (event) {
     event.preventDefault();
     const value = $tweetText.val().trim();
 
     if (value === '') {
-      return alert('you need to say something, silly!');
+      $errorWindow.slideDown();
+      $errorMessage.text('You need to actually SAY something silly! Try that again.');
     } else if (value.length > 140) {
-      return alert("you've got a lot to say huh? Let's try something a bit less verbose...");
-    }
-    const serializedData = $(this).serialize();
+      $errorWindow.slideDown();
+      $errorMessage.text('You have a lot to say, huh? Try something a little less verbose...');
+    } else {
+      $errorWindow.slideToggle();
 
-    $.post('/tweets', serializedData, () => {
-      resetTextarea();
-      loadTweets();
-    }).fail(function (error) {
-      console.error('something went wrong posting your tweet --', error?.responseJSON?.error);
-    });
+      const serializedData = $(this).serialize();
+
+      $.post('/tweets', serializedData, () => {
+        resetTextarea();
+        loadTweets();
+      }).fail(function (error) {
+        console.error('something went wrong posting your tweet --', error?.responseJSON?.error);
+      });
+    }
   });
 });
